@@ -2,11 +2,11 @@
 
 ## Description
 
-An image stitching algorithm which uses SIFT features to find matches between the images and then compute the homography matrix. Then the right image is aligned in the plane of the left image. Then again using SIFT features matching, the 2 images are blended and finally to smooth the seam generated between the 2 images, alpha feathering is used.
+An image stitching algorithm which uses SIFT features to find matches between the images and then compute the homography matrix. Using this matrix, the right image is aligned in the plane of the left image. Then again using SIFT features matching, the 2 images are blended and finally to smooth the seam generated between the 2 images, alpha feathering is used.
 
 ## How To
 
-* Run the game: 	
+* Run the code: 	
 	```console
 	bar@foo:~$ python3 stitchy.py <path to left image> <path to right image>
 	```
